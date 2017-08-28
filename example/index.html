@@ -20,10 +20,10 @@
     <script src="../dist/jquery.ezdz.min.js"></script>
     <script>
         $('[type="file"]').ezdz({
-            text: 'drop a picture',
+            text: 'Drop a picture or <button type=button>select</button>',
             validators: {
-                maxWidth:  600,
-                maxHeight: 400
+                maxWidth:  2600,
+                maxHeight: 2400
             },
             reject: function(file, errors) {
                 if (errors.mimeType) {
